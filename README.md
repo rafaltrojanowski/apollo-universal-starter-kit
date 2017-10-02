@@ -11,15 +11,9 @@ If you are using Apollo v1 please use [starter kit from `apollo1` branch](https:
 [![Twitter Follow](https://img.shields.io/twitter/follow/sysgears.svg?style=social)](https://twitter.com/sysgears)
 
 > Apollo Universal Starter Kit is a SEO friendly boilerplate for [Universal] Mobile and Web app development 
-> built on top of [Apollo], [GraphQL], [React], [React Native], [Expo], [Redux], [Express] with SQL storage support
-> and [Twitter Bootstrap] integration. Hot Code Reload of back end & front end using [Webpack] and 
+> built on top of [Apollo], [GraphQL], [React 16], [React Native], [Expo], [Redux], [Express] with
+> SQL storage support and [Twitter Bootstrap] integration. Hot Code Reload of back end & front end using [Webpack] and 
 > Hot Module Replacement to reflect your changes instantly and help you stay productive.
-
-## Commercial support
-
-SysGears team provides advanced support for commercial partners. A commercial partner will have a premium access to our
-team whether this is to help you with your code based on this starter kit or related technologies used in the kit. Contact
-us using [Skype](http://hatscripts.com/addskype?sysgears) or via email: [info@sysgears.com](mailto:info@sysgears.com)
 
 ## Hot Code Reload demo
 ![screencast](https://user-images.githubusercontent.com/1259926/27387579-c6799ada-56a1-11e7-93fc-d08e9970640d.gif)
@@ -51,7 +45,8 @@ us using [Skype](http://hatscripts.com/addskype?sysgears) or via email: [info@sy
   yarn watch
   ```
 
-6. Point your browser to [http://localhost:3000](http://localhost:3000)
+6. You browser will open the web application automatically. If not please search 
+the URL in terminal `Webpack web dev server listening on ..url..` and open this URL in web browser.
 7. Change any app code and see the changes applied immediately!
 8. Open app in multiple tabs, try to increase counter or add a new post/comment in one tab and then switch to another tab. You will see that
 counter value and post/comment are updated there as well, because the application is live updated via subscriptions.
@@ -86,6 +81,19 @@ Next, open up Xcode, go to preferences and click the Components tab, install a s
 After the installation if you run the server, simulator should start on it's own and open the app in Expo.
 To bring up the developer menu press ⌘+D.
 
+## Support
+
+### Community support
+
+- [Gitter channel] - questions, answers, general discussions
+- [GitHub issues] - submit issues, send feature requests
+
+### Commercial support
+
+SysGears team provides advanced support for commercial partners. A commercial partner will have a premium access to our
+team whether this is to help you with your code based on this starter kit or related technologies used in the kit. Contact
+us using [Skype](http://hatscripts.com/addskype?sysgears) or via email: [info@sysgears.com](mailto:info@sysgears.com)
+
 #### Writing the code
 This starter kit is designed so you can use it for just web, mobile or projects using both together. 
 In case you do not want to use mobile, just set both `builders.ios.enabled` or `builders.android.enabled` 
@@ -113,6 +121,25 @@ for both web and mobile.
 #### Known issues
 Currently we do not yet support persisted queries. This can be used in this starter kit currently only for web, but it is
 planed in the future.
+
+### Using with Docker
+Get latest Docker and Docker Compose:  
+https://www.docker.com/  
+https://docs.docker.com/compose/
+
+#### Starting Docker container for Development
+To run starter kit in development mode with hot code reload execute:
+  ```
+  docker-compose -f docker-compose.dev.yml up
+  ```
+, then search web app URL in terminal `Webpack web dev server listening on ..url..` and open this URL in web browser.  
+
+#### Starting Docker container for Production
+To run starter kit in production mode execute:
+  ```
+  docker-compose up
+  ```
+, then open URL `http://localhost:3000` in web browser.
 
 ### Configuring starter kit
 This starter kit supplies boilerplate code for multiple platforms:
@@ -375,7 +402,7 @@ Copyright © 2016, 2017 [SysGears INC]. This source code is licensed under the [
 [Universal]: https://medium.com/@mjackson/universal-javascript-4761051b7ae9
 [Apollo]: http://www.apollostack.com
 [GraphQL]: http://graphql.org
-[React]: https://facebook.github.io/react
+[React 16]: https://facebook.github.io/react
 [React Hot Loader v3]: https://github.com/gaearon/react-hot-loader
 [Redux]: http://redux.js.org
 [ReduxForm]: http://redux-form.com
@@ -404,3 +431,5 @@ Copyright © 2016, 2017 [SysGears INC]. This source code is licensed under the [
 [Xcode]: https://developer.apple.com/xcode/
 [Android Studio]: https://developer.android.com/studio/index.html
 [JWT]: https://jwt.io
+[Gitter channel]: https://gitter.im/sysgears/apollo-fullstack-starter-kit
+[GitHub issues]: https://github.com/sysgears/apollo-universal-starter-kit/issues
